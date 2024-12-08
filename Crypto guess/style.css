@@ -1,0 +1,287 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(27, 29, 40);
+    color: #ffffff;
+}
+
+.top-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: rgb(27, 29, 40);
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 15px;
+}
+
+.top-row,
+.bottom-row {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-container a {
+    color: white;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    text-decoration: none;
+}
+
+.nav-container a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links a img {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.2s;
+}
+
+.social-links a img:hover {
+    transform: scale(1.2);
+}
+
+.connect-wallet {
+    color: white;
+    font-size: 14px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.connect-wallet:hover {
+    text-decoration: underline;
+    transform: scale(1.02);
+}
+
+.start-new-coin {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.start-coin-btn {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(27, 29, 40);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.start-coin-btn:hover {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    font-weight: bold;
+    transition-duration: .2s;
+}
+
+.banner-image {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: auto;
+}
+
+#game {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#image-container img {
+    width: 300px;
+    height: 300px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.2s;
+}
+
+#image-container img:hover {
+    border-color: #ffffff;
+}
+
+#guess-input {
+    padding: 10px;
+    width: 300px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#submit-button {
+    padding: 10px 20px;
+    background-color: rgb(134, 239, 172);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #121212;
+    font-size: 16px;
+}
+
+#submit-button:hover {
+    background-color: rgb(34, 197, 94);
+}
+
+.how-it-works-modal {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Dark overlay */
+    justify-content: center;
+    align-items: center;
+    transition: visibility 0.2s, opacity 0.2s;
+}
+
+
+.modal-content {
+    background-color: #1b1d28;
+    /* Matches overall dark theme */
+    padding: 30px;
+    /* Comfortable padding */
+    width: 90%;
+    /* More responsive width */
+    max-width: 500px;
+    /* Limit width for large screens */
+    border-radius: 10px;
+    /* Rounded edges 
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /
+    /* Subtle shadow */
+    color: #fff;
+    /* White text */
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    /* Improve readability */
+    line-height: 1.6;
+    text-align: center;
+    border: #fff solid 1px;
+}
+
+.text-green-300 {
+    --tw-text-opacity: 1;
+    color: rgb(134 239 172 / var(--tw-text-opacity));
+}
+
+.text-blue-300 {
+    --tw-text-opacity: 1;
+    color: rgb(147 197 253 / var(--tw-text-opacity));
+}
+
+.text-orange-300 {
+    --tw-text-opacity: 1;
+    color: rgb(253 186 116 / var(--tw-text-opacity));
+}
+
+.text-gray-300 {
+    --tw-text-opacity: 1;
+    color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-modal:hover {
+    color: #e74c3c;
+
+}
+
+.i-m-ready {
+    color: #ffffff;
+    /* White text */
+    background-color: transparent;
+    /* No background */
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: font-weight 0.2s, transform 0.2s;
+    /* Smooth transition */
+}
+
+.i-m-ready:hover {
+    font-weight: bold;
+    /* Bold on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+
+.how-it-works h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 0;
+}
+
+.about {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    visibility: hidden;
+    /* Invisible but preserves layout */
+    opacity: 0;
+    /* Fully transparent */
+    transition: visibility 0.2s, opacity 0.2s;
+    /* Smooth fade effect */
+}
+
+#feedback {
+    margin-top: 10px;
+}
+
+#score-display {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
