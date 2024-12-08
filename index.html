@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pump Guess Game</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="top-banner">
+        <div class="left-container">
+            <div class="logo-container">
+                <a href="https://pump.fun/board">
+                    <img src="https://pump.fun/logo.png" alt="Pump Logo" class="logo">
+                </a>
+
+                <div class="nav-container">
+                    <div class="top-row">
+                        <a href="#">[how it works]</a>
+                        <a href="https://pump.fun/advanced">[advanced]</a>
+                    </div>
+                    <div class="bottom-row">
+                        <a class="nav-link" href="https://t.me/pumpfunsupport" target="_blank"
+                            rel="noopener noreferrer">[support]</a>
+                        <div class="social-links">
+                            <a href="https://t.me/pumpfunsupport" target="_blank">
+                                <img src="images/telegram-logo.png" alt="Telegram">
+                            </a>
+                            <a href="https://twitter.com/pumpdotfun" target="_blank">
+                                <img src="images/x-logo.png" alt="Twitter">
+                            </a>
+                            <a href="https://www.instagram.com/pumpdotfun_/" target="_blank">
+                                <img src="images/instagram.png" alt="Instagram">
+                            </a>
+                            <a href="https://www.tiktok.com/@pump.fun" target="_blank">
+                                <img src="images/tiktok.png" alt="TikTok">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="connect-wallet">[Connect Wallet]</button>
+    </header>
+
+    <div class="start-new-coin">
+        <a href="https://pump.fun/create">
+            <button class="start-coin-btn">[Start a new coin]</button>
+        </a>
+    </div>
+
+    <main>
+        <img src="images/king-of-the-hill.png" alt="King of the Hill" class="banner-image">
+
+        <section id="game">
+            <h1>Guess the Crypto Coin</h1>
+            <div id="image-container"></div>
+            <input type="text" id="guess-input" placeholder="Type the coin name">
+            <button id="submit-button">Submit</button>
+            <div id="feedback"></div>
+        </section>
+
+        <div class="how-it-works-modal hidden">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="how-it-works">
+                    <h2>how it works</h2>
+                    <div class="about">pump prevents rugs by making sure that all created tokens are safe. each coin on
+                        pump is a
+                        <span class="text-green-300 bold">fair-launch</span> with <span class="text-blue-300">no
+                            presale</span> and <span class="text-orange-300">no team allocation.</span>
+                    </div>
+
+                    <div class="text-gray-300">step 1: pick a coin that you like</div>
+                    <div class="text-gray-300">step 2: buy the coin on the bonding curve</div>
+                    <div class="text-gray-300">step 3: sell at any time to lock in your profits or losses</div>
+                    <div class="text-gray-300">step 4: when enough people buy on the bonding curve it reaches a
+                        market cap of $100k</div>
+                    <div class="text-gray-300">step 5: $17k of liquidity is then deposited in raydium and burned
+                    </div>
+
+                    <button class="i-m-ready">[I'm ready to pump]</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
